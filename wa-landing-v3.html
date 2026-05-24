@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="color-scheme" content="light">
+<title>Join Group</title>
+
+<!-- ═══════ EDIT HERE ═══════ -->
+<script>
+var PX='YOUR_PIXEL_ID';
+var WA='https://chat.whatsapp.com/Bj6uTmijFVRD30y3ORDrID?mode=gi_t';
+</script>
+<!-- ════════════════════════ -->
+
+<script>
+if(PX&&PX!='YOUR_PIXEL_ID'){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',PX);fbq('track','PageView');}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;color-scheme:light}
+
+body{
+  font-family:system-ui,-apple-system,sans-serif;
+  background:#fff !important;
+  color:#111 !important;
+}
+
+/* ── HEADER ── */
+.header{
+  background:linear-gradient(160deg,#0f172a 0%,#1e3a5f 100%);
+  padding:36px 20px 28px;
+  text-align:center;
+}
+
+.app-logo{
+  width:88px;height:88px;
+  background:linear-gradient(135deg,#3b82f6,#06b6d4);
+  border-radius:24px;
+  margin:0 auto 16px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:44px;
+  box-shadow:0 12px 32px rgba(59,130,246,.4);
+  animation:pop .5s cubic-bezier(.68,-.55,.265,1.55);
+}
+@keyframes pop{0%{transform:scale(0)}100%{transform:scale(1)}}
+
+.app-name{
+  font-size:28px;font-weight:900;
+  color:#fff !important;
+  margin-bottom:10px;
+}
+
+.tagline{
+  font-size:15px;
+  color:rgba(255,255,255,.85) !important;
+  line-height:1.6;
+  margin-bottom:20px;
+}
+.tagline b{color:#38bdf8 !important}
+
+.live-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.2);
+  padding:7px 16px;border-radius:20px;
+  font-size:12px;font-weight:700;color:#fff;
+  letter-spacing:.3px;
+}
+.ld{width:8px;height:8px;background:#4ade80;border-radius:50%;animation:blink 1.5s infinite;box-shadow:0 0 6px #4ade80}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+
+/* ── JOIN BUTTON TOP ── */
+.btn-wrap{padding:20px 16px 4px}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;padding:17px;
+  background:linear-gradient(135deg,#25d366,#128c7e);
+  color:#fff !important;
+  border-radius:14px;font-size:16px;font-weight:800;
+  text-decoration:none;
+  box-shadow:0 8px 24px rgba(37,211,102,.4);
+  transition:transform .15s;
+  animation:glow 2s infinite;
+}
+@keyframes glow{0%,100%{box-shadow:0 8px 24px rgba(37,211,102,.4)}50%{box-shadow:0 8px 32px rgba(37,211,102,.7)}}
+.btn:active{transform:scale(.97)}
+.btn svg{width:22px;height:22px;flex-shrink:0}
+
+/* ── SECTION LABEL ── */
+.section-label{
+  font-size:13px;font-weight:800;
+  color:#64748b !important;
+  text-transform:uppercase;letter-spacing:.8px;
+  padding:20px 16px 10px;
+}
+
+/* ── PROOF IMAGES ── */
+.img-scroll{
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  padding:0 16px 16px;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+.img-scroll::-webkit-scrollbar{display:none}
+.proof-img{
+  flex-shrink:0;
+  width:160px;height:280px;
+  border-radius:16px;
+  object-fit:cover;
+  box-shadow:0 4px 16px rgba(0,0,0,.12);
+  border:2px solid #e2e8f0;
+}
+
+/* ── BENEFITS ── */
+.benefits{
+  margin:0 16px 16px;
+  background:#f8fafc !important;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid #e2e8f0;
+}
+.b-row{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 16px;
+  border-bottom:1px solid #e2e8f0;
+}
+.b-row:last-child{border-bottom:none}
+.b-left{
+  width:40px;height:40px;flex-shrink:0;
+  background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;
+}
+.b-right{}
+.b-title{font-size:13px;font-weight:700;color:#0f172a !important}
+.b-sub{font-size:11px;color:#64748b !important;margin-top:2px}
+
+/* ── BOTTOM CTA ── */
+.bottom{padding:4px 16px 12px}
+
+/* ── DISCLAIMER ── */
+.disc{
+  margin:0 16px 28px;
+  background:#f8fafc !important;
+  border:1px solid #e2e8f0;
+  border-radius:12px;
+  padding:14px;
+  font-size:10px;
+  color:#94a3b8 !important;
+  line-height:1.7;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="app-logo">💰</div>
+  <div class="app-name">Money Hub</div>
+  <div class="tagline">
+    💸 Ghar baithe <b>Daily Withdrawal</b> karo<br>
+    App ka link milega WhatsApp Group mein!
+  </div>
+  <span class="live-badge"><span class="ld"></span>Group Active Now</span>
+</div>
+
+<!-- TOP JOIN BUTTON -->
+<div class="btn-wrap">
+  <a class="btn" id="btn" href="#" onclick="track()">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.06L2 22l5.08-1.35A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 13.48c-.19.54-.94 1-1.55 1.13-.41.09-.95.16-2.76-.59-2.32-.93-3.81-3.28-3.93-3.43-.11-.16-.96-1.28-.96-2.44s.6-1.73.82-1.97c.22-.23.48-.29.64-.29h.46c.15 0 .35-.06.54.41.2.5.68 1.66.74 1.78.06.12.1.27.02.43-.09.16-.13.26-.26.4-.13.14-.27.3-.38.41-.13.12-.26.26-.11.5.15.24.67 1.1 1.44 1.78.99.88 1.82 1.15 2.07 1.28.26.13.41.11.56-.07.15-.18.64-.75.81-.1.17.65.17.67-.02 1.21z"/></svg>
+    WhatsApp Group Join Karo
+  </a>
+</div>
+
+<!-- PROOF IMAGES -->
+<div class="section-label">📸 Payment Proofs</div>
+<div class="img-scroll">
+  <img class="proof-img" src="img1.jpg" alt="proof" loading="lazy">
+  <img class="proof-img" src="img2.jpg" alt="proof" loading="lazy">
+  <img class="proof-img" src="img3.jpg" alt="proof" loading="lazy">
+  <img class="proof-img" src="img4.jpg" alt="proof" loading="lazy">
+  <img class="proof-img" src="img5.jpg" alt="proof" loading="lazy">
+</div>
+
+<!-- BENEFITS -->
+<div class="section-label">✅ App Benefits</div>
+<div class="benefits">
+  <div class="b-row">
+    <div class="b-left">✅</div>
+    <div class="b-right">
+      <div class="b-title">Trusted & Genuine</div>
+      <div class="b-sub">Verified platform, safe to use</div>
+    </div>
+  </div>
+  <div class="b-row">
+    <div class="b-left">💸</div>
+    <div class="b-right">
+      <div class="b-title">Daily Income & Daily Withdrawal</div>
+      <div class="b-sub">Roz kamao, roz nikalo</div>
+    </div>
+  </div>
+  <div class="b-row">
+    <div class="b-left">⚡</div>
+    <div class="b-right">
+      <div class="b-title">Instant Fast Withdraw</div>
+      <div class="b-sub">Second mein account mein</div>
+    </div>
+  </div>
+  <div class="b-row">
+    <div class="b-left">🎧</div>
+    <div class="b-right">
+      <div class="b-title">24/7 Support Available</div>
+      <div class="b-sub">Hamesha help ke liye taiyar</div>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM JOIN BUTTON -->
+<div class="bottom">
+  <a class="btn" id="btn2" href="#" onclick="track()">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.06L2 22l5.08-1.35A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 13.48c-.19.54-.94 1-1.55 1.13-.41.09-.95.16-2.76-.59-2.32-.93-3.81-3.28-3.93-3.43-.11-.16-.96-1.28-.96-2.44s.6-1.73.82-1.97c.22-.23.48-.29.64-.29h.46c.15 0 .35-.06.54.41.2.5.68 1.66.74 1.78.06.12.1.27.02.43-.09.16-.13.26-.26.4-.13.14-.27.3-.38.41-.13.12-.26.26-.11.5.15.24.67 1.1 1.44 1.78.99.88 1.82 1.15 2.07 1.28.26.13.41.11.56-.07.15-.18.64-.75.81-.1.17.65.17.67-.02 1.21z"/></svg>
+    Abhi Join Karo — Free!
+  </a>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disc">
+  Disclaimer: Yeh group sirf informational purpose ke liye hai. Koi bhi decision lene se pehle apni samajh se kaam lein. Hum kisi bhi individual profit ya loss ke liye zimmedar nahi hain. Join karna aapki apni marzi par nirbhar hai.
+</div>
+
+<script>
+document.getElementById('btn').href=WA;
+document.getElementById('btn2').href=WA;
+function track(){if(typeof fbq!='undefined'){fbq('track','Lead');fbq('track','Subscribe')}}
+if(typeof fbq!='undefined')fbq('track','ViewContent');
+</script>
+</body>
+</html>
